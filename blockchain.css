@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Navber section */
+.navber{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin-top: px;
+    padding: 30px 10px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgba(62, 54, 54, 0.159);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.navlinks{
+display: flex;
+align-items: center;
+}
+.navlinks li{
+    list-style: none;
+    text-align: center;
+}
+.navlinks ul li{
+    display: flex;
+gap: 20px;
+}
+.navlinks a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(73, 76, 79);
+}
+.navlinks a:hover{
+    color: blue;
+    border-bottom: solid 1px black;
+}
+.navlinks a:active{
+    color: #1f1ff8;
+}
+.cta-btn button{
+    margin: 25px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* navber responsive */
+
+@media (max-width:768px){
+    .navber{
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+    }
+   .navlinks ul li{
+    flex-direction: row;
+    gap: 8px;
+   }
+
+}
+
+/* banner section */
+.banner{
+    width: 100%;
+    padding: 20px 40px;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side, .right-side {
+flex: 1;
+width: 40%;
+height: auto;
+padding: 15px 15px;
+background-color:;
+margin-right: 5px;
+min-height: 300px;
+}
+.left-side h1{
+
+color: black;
+text-align: center;
+padding-bottom: 10px;
+font-size: 40px;
+}
+.left-side p{
+color: rgb(93, 101, 107);
+text-align: center;
+text-align: justify;
+}
+.banner-btn{
+ margin-top: 50px;
+ padding-top: 15px;
+ text-align: center;   
+
+}
+.banner-btn a{
+ text-decoration: none;
+}
+.banner-btn a:hover{
+    color: blue;
+}
+.right-side{
+margin-left: 5px;
+}
+.right-side img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+   /* banner section responsive */
+
+   @media(max-width:768px){
+     .banner{
+        flex-direction: column;
+        align-items: center;
+     }
+     .left-side,
+     .right-side{
+        width: 98%;
+     }
+   }
+
+/* client section */
+.client{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 20px 40px;
+    align-items: center;
+}
+.client h1, p{
+    font-size: ;
+    text-align: center;
+    color: rgb(93, 101, 107);
+}
+.client h1{
+    color: black
+}
+.client-logo a img{
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+}
+.client-logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 15px;
+    justify-items: center;
+    justify-content: center;
+}
+
+/* client section responsive */
+@media(max-width:768px){
+    .client,
+    .client-logo{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        align-items: center;
+    }
+    .client-logo a{
+        flex:0 0 35%;
+        display: flex;
+        justify-content: center;
+    }
+    .client-logo img{
+        width: 90px;
+    }
+}
+
+/* power of blockchain section */
+.power-1{
+    width: 100%;
+    height: auto
+    background-color: ;
+   margin-top: 15px;
+}
+.power-1 .power-heading h1{
+    text-align: center;
+}
+/* 3div section */
+.power-2{
+  margin: 35px 40px; 
+  display: flex; 
+  flex: 1;
+  justify-content: space-around;
+  
+}
+.power-2
+.creatore,
+.financial,
+.supply-chain
+{
+    
+ width: 300px;
+ height: 400px;
+}
+.creatore{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+.financial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     text-align: center;
+}
+.supply-chain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     text-align: center;
+}
+
+.creatore img,
+.financial img,
+.supply-chain img{
+width: 50px;
+height: 50px;
+}
+
+/* power of blockchain section responsive  */
+
+@media(max-width:768px){
+    .power-1,
+    .power-2{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* helping section */
+
+.helping{
+    width: 99%;
+    height: auto;
+    margin: 10px 10px;
+    padding: 15px 10px;
+    display: flex;
+}
+.helping-text, .for-contents{
+    width: 100%;
+    height:auto;
+    margin: 25px 10px;
+    text-align: center;
+    background-color: ;    
+    flex: 1;
+    display: grid;
+   grid-template-columns: 50% 50%; 
+}
+.helping-text{
+    display: block;
+    padding: 5px 5px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.for-contents{
+    
+}
+.for-contents .icon img{
+    width: 80px;
+    height: 80px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.networks,
+.contracts,
+.value,
+.wallets{
+    display: flex;
+    padding: 10px 10px;
+}
+
+/* helping section responsive */
+
+@media(max-width:768px){
+   .helping,
+   .for-contents{
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+   }
+}
+
+/* blockchain future */
+
+
+.future-content{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+     margin-top: 50px;
+    padding: 10px 25px;
+    background-color:;
+    display: grid;
+    align-items: center;
+}
+.future-content h1, p{
+   text-align: center;
+}
+
+/* future responsive */
+
+@media(max-width:768px){
+    .future{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* card section */
+
+.card-section{
+    width: 96%;
+    height: auto;
+    margin-inline: 30px 30px;
+    margin-block: 50px 150px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+.first-card img,
+.second-card img,
+.third-card img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow:0 5px 8px 0px#c5b7b7eb;
+}
+.first-card,
+.second-card,
+.third-card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align:;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    box-shadow:0 4px 8px rgba(255,255,255,.9);
+    bottom: -50px;
+    background-color: #d8cdcd;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5 ;
+   
+}
+.card-text p{
+    color: rgb(82, 74, 74);
+}
+.card-text a{
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-text:hover{
+  opacity: 1;
+  transition: .5;  
+  width: 200px;
+  height: 200px;
+}
+
+/* card section  responsive */
+
+@media(max-width:768px){
+    .card-section{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+        padding-top: 30px;
+    }
+    .first-card,
+.second-card,
+.third-card{
+    width: 90%;
+}
+}
+
+/* contract section */
+
+.contract{
+margin-inline: 30px 30px;
+width: 97%;
+padding: 20px 15px;
+}
+.contract-heading h1{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contract-img img{
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.contract-fild{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
+
+.contract-form{
+    margin: 10px;
+    padding: 15px;
+}
+.contract-form p{
+margin-bottom: 10px;
+color: black;
+font-size: 25px;
+font-weight: bold;
+text-align: justify;
+}
+.contract-form input{
+    width: 250px;
+    height: 25px;
+    border-bottom: solid 1px black;
+    border-radius: 5px;
+}
+.contract-form textarea{
+    width: 250px;
+    border: solid 2px black;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+    border-radius: 5px;
+}
+.contract-form button{
+    padding: 5px;
+    border-radius: 5px;
+}
+.contract-form button:hover{
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+
+/* contract responsive */
+
+@media(max-width:768px){
+    .contract,
+    .contract-fild{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .contract-heading,
+    .contract-img,
+    .contract-form{
+        width: 100%;
+       /* text-align: center; */
+    }
+}
+
+
+
+/* footer section */
+.footer{
+width: 100%;
+height: auto;
+background-color: rgba(29, 29, 41, 0.9);
+display: flex;
+justify-content: center;
+overflow-x: hidden;
+gap: 35px;
+text-align: center;
+margin-block: 50px 0;
+padding-block: 30px 20px;
+color: white;
+}
+.logo .social-icon img{
+ width: 30px; 
+ height: 30px;  
+ padding-right: 5px;
+}
+.footer h2{
+    margin-bottom: 15px;
+    color: white;
+}
+.company,
+.support,
+.logo,
+.stay-up
+{
+    width: 25%;
+    height: auto;
+    padding-inline: 15px 15px;
+   
+}
+.company ul li,
+.support ul li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.company a,
+.support a{
+   text-decoration: none;
+    color: white;
+    
+}
+
+.company a:hover{
+    color: #1f1ff8;
+}
+.support a:hover{
+    color: #1f1ff8;
+}
+
+/*footer responsive */
+
+@media(max-width:768px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(29, 29, 41, 0.9);
+    }
+.company,
+.support,
+.logo,
+.stay-up{
+    border-bottom: solid 1px rgb(68, 66, 66);
+}
+}
